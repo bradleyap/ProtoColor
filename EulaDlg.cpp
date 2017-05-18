@@ -46,7 +46,7 @@ BOOL CEulaDlg::OnInitDialog()
 	CString lb = "lb";
 	lb.SetAt(0,13);
 	lb.SetAt(1,10);
-	m_text = "This software is free to use, copy and modify as users see fit, with the following provisions:"
+	m_text = "This software is free to use, copy and modify as users see fit, with the following provisions:";
 	m_text += lb;
 	m_text += lb;
 	m_text += "Proper compliance with all Microsoft MFC licensing should be observed";
