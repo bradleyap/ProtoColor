@@ -1,0 +1,39 @@
+// MAKEHELP.BAT generated Help Map file.  Used by PROTOCOLOR.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_COLOR_SPEC                          0x18003
+HID_LAYOUT                              0x18004
+HID_CELL_SPECS                          0x18005
+HID_BLOCK_LAYOUT                        0x18006
+HID_C_BLOCK_LAYOUT                      0x18007
+HID_SPECIFY_ORIENT                      0x18008
+HID_VIEW_PAGEFINDER                     0x18009
+HID_RGB_BUTTON                          0x1800A
+HID_CMYK_BUTTON                         0x1800B
+HID_CMY_BUTTON                          0x1800C
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_PROCOTYPE                          0x20081
+HIDR_TOOLBAR1                           0x20082
+HIDR_COLOR_TOOLBAR                      0x200AF
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_COLOR_FORMAT                       0x2009E
+HIDD_PAGE_LAYOUT                        0x2009F
+HIDD_COLOR_ORIENTATION                  0x200A0
+HIDD_CELL_ASPECTS                       0x200A1
+HIDD_VIEW_PAGE                          0x200A2
+HIDD_CBLOCK_LAYOUT                      0x200A3
+HIDD_BLOCK_LAYOUT                       0x200A4
+HIDD_MESSAGE_BOX                        0x200A5
+HIDD_RETRACT_REQ                        0x200A6
+HIDD_AUTHORIZE                          0x200A7
+HIDD_EULA                               0x200A8
+HIDD_FLASH_SCREEN                       0x200A9
+HIDD_MY_STATUS_BAR                      0x200AA
+ 
+// Frame Controls (IDW_*) 

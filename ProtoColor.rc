@@ -1,0 +1,943 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ProtoColor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ProtoColor.ico"
+IDR_PROCOTYPE           ICON                    "res\\SerioDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_UNLOCKED_UP         BITMAP                  "res\\OpenLockUp.bmp"
+IDB_UNLOCKED_DN         BITMAP                  "res\\OpenLockDn.bmp"
+IDB_LOCKED_DN           BITMAP                  "res\\ClosedLockDn.bmp"
+IDB_LOCKED_UP           BITMAP                  "res\\ClosedLockUp.bmp"
+IDB_AR                  BITMAP                  "res\\ar.bmp"
+IDB_AR_TL               BITMAP                  "res\\ar_tl.bmp"
+IDB_AR_TB               BITMAP                  "res\\ar_tb.bmp"
+IDB_AR_TLB              BITMAP                  "res\\ar_tlb.bmp"
+IDB_AR_TLBR             BITMAP                  "res\\ar_tlbr.bmp"
+IDB_AR_TR               BITMAP                  "res\\ar_tr.bmp"
+IDB_AR_BR               BITMAP                  "res\\ar_br.bmp"
+IDB_AR_TBR              BITMAP                  "res\\ar_tbr.bmp"
+IDB_AR_LR               BITMAP                  "res\\ar_lr.bmp"
+IDB_AR_LB               BITMAP                  "res\\ar_lb.bmp"
+IDB_AR_RLB              BITMAP                  "res\\ar_rlb.bmp"
+IDB_AR_TLR              BITMAP                  "res\\ar_tlr.bmp"
+IDB_AR_TR_LB            BITMAP                  "res\\ar_tr_lb.bmp"
+IDB_AR_TL_RB            BITMAP                  "res\\ar_tl_rb.bmp"
+IDB_AR_TB_LR            BITMAP                  "res\\ar_tb_lr.bmp"
+IDB_CO_CMYK             BITMAP                  "res\\cmyk.bmp"
+IDB_CO_RGB              BITMAP                  "res\\rgb.bmp"
+IDB_CO_CMY              BITMAP                  "res\\cmy.bmp"
+IDB_LOCKEDX             BITMAP                  "res\\lockedx.bmp"
+IDB_UNLOCKEDX           BITMAP                  "res\\unlockedx.bmp"
+IDB_SOLDIER             BITMAP                  "res\\soldier.bmp"
+IDR_COLOR_TOOLBAR       BITMAP                  "res\\ColorToolBar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_COLOR_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_RGB_BUTTON
+    BUTTON      ID_CMYK_BUTTON
+    BUTTON      ID_CMY_BUTTON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About ProtoColor...",        ID_APP_ABOUT
+    END
+END
+
+IDR_PROCOTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Specify"
+    BEGIN
+        MENUITEM "Color &Format...\tCtrl+F",    ID_COLOR_SPEC
+        MENUITEM "Page &Layout...\tCtrl+L",     ID_LAYOUT
+        MENUITEM "Cell &Ascpects...\tCtrl+A",   ID_CELL_SPECS
+        MENUITEM "&Block Layout...\tCtrl+B",    ID_BLOCK_LAYOUT
+        MENUITEM "&C-Block Layout...\tCtrl+C",  ID_C_BLOCK_LAYOUT
+    END
+    POPUP "&Customize"
+    BEGIN
+        MENUITEM "O&rientation...\tCtrl+R",     ID_SPECIFY_ORIENT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Page Flipper",                ID_VIEW_PAGEFINDER, CHECKED
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About ProtoColor...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ProtoColor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "ProtoColor Version 1.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_COLOR_FORMAT DIALOG  50, 50, 327, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Format Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,270,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,270,24,50,14
+    PUSHBUTTON      "Help...",IDC_COLOR_HELP,270,42,50,14
+    CONTROL         "RGB",IDC_RADIO_RGB,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,20,31,10
+    CONTROL         "CMYK",IDC_RADIO_CMYK,"Button",BS_AUTORADIOBUTTON,82,20,36,10
+    CONTROL         "CMY",IDC_RADIO_CMY,"Button",BS_AUTORADIOBUTTON,142,20,31,10
+    COMBOBOX        IDC_MAX_STEPS,121,51,95,40,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OUTL_COLR,70,85,75,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_START_RA_L2R,43,130,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_RA_L2R,43,146,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_RA_T2B,95,130,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_RA_T2B,95,146,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_RA_F2L,147,130,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_RA_F2L,147,146,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_RA_F2B,199,130,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_RA_F2B,199,146,30,12,ES_AUTOHSCROLL
+    CONTROL         "honor requests and range values only",IDC_HONOR_REQ,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,207,142,9
+    CONTROL         "preserve layout",IDC_PRESERVE_LAY,"Button",BS_AUTORADIOBUTTON,22,221,78,9
+    CONTROL         "",IDC_AUTO_LOCK_RANGE,"Button",BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,22,164,10,9
+    PUSHBUTTON      "Reset",IDC_COLOR_RESET,270,60,50,14,BS_MULTILINE
+    PUSHBUTTON      "Compute",IDC_COMPUTE_COLOR,270,79,50,14
+    PUSHBUTTON      "Next...",IDC_COLOR_JUMP,270,98,50,14,BS_MULTILINE
+    GROUPBOX        "Color Model:",IDC_STATIC,7,7,179,30
+    LTEXT           "Describe FULL color-range in:",IDC_STATIC,21,53,95,8
+    GROUPBOX        "Color Range",IDC_STATIC,7,107,254,72
+    LTEXT           "RED",IDC_DYN_L2R,44,122,41,8
+    LTEXT           "BLUE",IDC_DYN_T2B,95,122,40,8
+    LTEXT           "GREEN",IDC_DYN_F2L,147,122,37,8
+    LTEXT           "BLACK",IDC_DYN_F2B,202,122,41,8
+    LTEXT           "from:",IDC_STATIC,22,131,16,8
+    LTEXT           "to:",IDC_STATIC,29,147,10,11
+    CONTROL         "LOCKED",IDC_LOCKED,"Button",BS_OWNERDRAW | BS_BITMAP,229,130,15,13
+    CONTROL         "LOCKED",IDC_LOCKED2,"Button",BS_OWNERDRAW | BS_BITMAP,229,146,15,13
+    CONTROL         "LOCKED",IDC_LOCKED3,"Button",BS_OWNERDRAW | BS_BITMAP,177,130,15,13
+    CONTROL         "LOCKED",IDC_LOCKED4,"Button",BS_OWNERDRAW | BS_BITMAP,177,146,15,13
+    CONTROL         "LOCKED",IDC_LOCKED5,"Button",BS_OWNERDRAW | BS_BITMAP,125,130,15,13
+    CONTROL         "LOCKED",IDC_LOCKED6,"Button",BS_OWNERDRAW | BS_BITMAP,125,146,15,13
+    CONTROL         "LOCKED",IDC_LOCKED7,"Button",BS_OWNERDRAW | BS_BITMAP,73,130,15,13
+    CONTROL         "LOCKED",IDC_LOCKED8,"Button",BS_OWNERDRAW | BS_BITMAP,73,146,15,14
+    GROUPBOX        "Virtual Color Steps:",IDC_STATIC,7,40,227,30
+    GROUPBOX        "Cell Outline Color",IDC_STATIC,7,74,156,30
+    LTEXT           "outline color:",IDC_STATIC,23,87,41,8
+    LTEXT           "Calculations should attempt to:",IDC_STATIC,22,194,97,8
+    LTEXT           "automatically lock upon close of dialog",IDC_STATIC,34,164,126,8
+    GROUPBOX        "Calculation Objectives",IDC_STATIC,7,182,160,53
+END
+
+IDD_PAGE_LAYOUT DIALOG  50, 50, 356, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Layout Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,297,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,297,24,50,14
+    PUSHBUTTON      "Help",IDC_BUTTON1,297,42,50,14
+    GROUPBOX        "Page Attributes",IDC_STATIC,7,7,181,75
+    LTEXT           "page width:",IDC_STATIC,35,25,38,11
+    EDITTEXT        IDC_PAGEW_EDIT,77,23,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_COMB,112,23,51,57,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "page height:",IDC_STATIC,31,41,41,10
+    EDITTEXT        IDC_PAGEH_EDIT,77,39,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_COMB2,112,39,51,42,CBS_DROPDOWN | WS_TABSTOP
+    LTEXT           "# of pages:",IDC_STATIC,35,56,37,12
+    EDITTEXT        IDC_PAGE_COUNT,77,55,30,13,ES_AUTOHSCROLL
+    CONTROL         "show page #'s",IDC_PAGINATE_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,54,62,14
+    GROUPBOX        "Margin Specifics",IDC_STATIC,7,162,340,50
+    LTEXT           "upper margin:",IDC_STATIC,27,178,45,10
+    EDITTEXT        IDC_UPPER_M_EDIT,73,176,30,13,ES_AUTOHSCROLL | WS_GROUP
+    COMBOBOX        IDC_UNIT_COMB3,108,176,51,53,CBS_DROPDOWN | WS_TABSTOP
+    LTEXT           "left margin:",IDC_STATIC,35,194,38,10
+    EDITTEXT        IDC_LEFT_M_EDIT,73,192,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_COMB4,108,192,51,48,CBS_DROPDOWN | WS_TABSTOP
+    LTEXT           "lower margin:",IDC_STATIC,184,178,44,8
+    EDITTEXT        IDC_LOWER_M_EDIT,229,176,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_COMB5,264,176,51,58,CBS_DROPDOWN | WS_TABSTOP
+    LTEXT           "right margin:",IDC_STATIC,188,194,39,10
+    EDITTEXT        IDC_RIGHT_M_EDIT,229,192,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_COMB6,264,192,51,53,CBS_DROPDOWN | WS_TABSTOP
+    GROUPBOX        "Outer Margin Thicknesses",IDC_STATIC,7,85,257,73
+    LTEXT           "Click the appropriate lines to have the outer margins retain their proportions during resize operations.",IDC_STATIC,24,104,100,39
+    LTEXT           "TOP",IDC_STATIC,179,95,16,8
+    LTEXT           "RIGHT",IDC_STATIC,219,119,24,8
+    LTEXT           "BOTTOM",IDC_STATIC,171,143,32,8
+    LTEXT           "LEFT",IDC_STATIC,137,119,18,8
+    PUSHBUTTON      "Reset",IDC_LAYOUT_RESET,297,60,50,14,BS_MULTILINE
+    PUSHBUTTON      "Compute",IDC_COMPUTE,297,79,50,14
+    PUSHBUTTON      "Next...",IDC_LAYOUT_JUMP,297,97,50,14,BS_MULTILINE
+    CONTROL         "LOCKED",IDC_LOCKED12,"Button",BS_OWNERDRAW,160,176,14,13
+    CONTROL         "LOCKED",IDC_LOCKED13,"Button",BS_OWNERDRAW,160,192,14,13
+    CONTROL         "LOCKED",IDC_LOCKED14,"Button",BS_OWNERDRAW,316,176,14,13
+    CONTROL         "LOCKED",IDC_LOCKED15,"Button",BS_OWNERDRAW,316,192,14,13
+    LTEXT           "",IDC_CLICKABLE_STATIC,157,104,60,39,NOT WS_GROUP
+END
+
+IDD_CELL_ASPECTS DIALOG  12, 12, 450, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cell Aspects Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,392,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,392,24,50,14
+    PUSHBUTTON      "Help...",IDC_BUTTON1,392,42,50,14
+    CONTROL         "rows.....................................",IDC_CNS_ROW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,34,102,10
+    CONTROL         "columns...............................",IDC_CNS_COL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,50,102,10
+    CONTROL         "blocks..................................",IDC_CNS_BLK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,66,101,10
+    CONTROL         "conglomerate blocks...........",IDC_CNS_CBLK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,82,101,10
+    EDITTEXT        IDC_FRQ_ROW,170,32,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRQ_COL,170,48,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRQ_BLK,170,64,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRQ_CBLK,170,80,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROW_COUNT,327,32,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLUMN_COUNT,327,48,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCK_COUNT,327,64,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C_BLOCK_COUNT,327,80,18,13,ES_AUTOHSCROLL
+    CONTROL         "allow quantities to alter unlocked color ranges",IDC_FROM_COLOR,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,21,119,123,17
+    CONTROL         "do not synchronize to fractions of color steps",IDC_INT_SYNC,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,21,139,109,20
+    COMBOBOX        IDC_UNIT_MEAS_COMB1,248,117,51,35,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CELL_HEIGHT,213,134,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_MEAS_COMB2,248,134,51,35,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "maintain aspect ratio",IDC_CELL_RATIO,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,186,152,81,10
+    EDITTEXT        IDC_BLOCK_WIDTH,70,186,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_MEAS_COMB3,105,186,51,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BLOCK_HEIGHT,70,203,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_MEAS_COMB4,105,203,51,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CNGL_BLOCK_W,310,186,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_MEAS_COMB5,345,186,51,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CNGL_BLOCK_H,310,203,30,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT_MEAS_COMB6,345,203,51,38,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",IDC_RESET,392,60,50,14,BS_MULTILINE
+    PUSHBUTTON      "Compute",IDC_CALCULATE,392,78,50,14,BS_MULTILINE
+    PUSHBUTTON      "Next...",IDC_JUMP,392,97,50,14,BS_MULTILINE
+    GROUPBOX        "Frequency of Drawn Cells",IDC_STATIC,7,7,231,93
+    LTEXT           "total cells:",IDC_STATIC,290,19,34,8
+    LTEXT           "drawn every",IDC_STATIC,129,50,40,8
+    LTEXT           "steps",IDC_STATIC,201,50,18,8
+    GROUPBOX        "Cell Attributes",IDC_STATIC,158,103,177,64
+    LTEXT           "cell width:",IDC_STATIC,174,120,34,11
+    LTEXT           "cell height:",IDC_STATIC,172,136,35,11
+    GROUPBOX        "Block Attributes",IDC_STATIC,7,170,185,52
+    LTEXT           "block width:",IDC_STATIC,26,188,41,11
+    LTEXT           "block height:",IDC_STATIC,23,205,44,11
+    GROUPBOX        "Conglomerate Block Attributes (CMYK only)",IDC_START_RANGE,200,170,231,52
+    LTEXT           "conglomerate block width:",IDC_STATIC,221,188,86,11
+    LTEXT           "conglomerate block height:",IDC_STATIC,220,205,85,11
+    LTEXT           "total blocks:",IDC_STATIC,284,66,41,10
+    LTEXT           "columns per block:",IDC_STATIC,263,50,63,8
+    LTEXT           "total  c' blocks:",IDC_STATIC,274,82,50,8
+    GROUPBOX        "Settings for Cell Quantity Changes",IDC_STATIC,7,103,143,64
+    LTEXT           "rows per block:",IDC_STATIC,275,34,49,8
+    LTEXT           "drawn every",IDC_STATIC,129,66,40,8
+    LTEXT           "steps",IDC_STATIC,201,66,18,8
+    LTEXT           "drawn every",IDC_STATIC,129,34,40,8
+    LTEXT           "steps",IDC_STATIC,201,34,18,8
+    LTEXT           "drawn every",IDC_STATIC,129,82,40,8
+    LTEXT           "steps",IDC_STATIC,201,82,18,8
+    LTEXT           "constrain:                                     to be:",IDC_STATIC,25,22,186,8
+    CONTROL         "LB",IDC_LOCKED17,"Button",BS_OWNERDRAW,345,32,14,13
+    CONTROL         "LB",IDC_LOCKED18,"Button",BS_OWNERDRAW,345,48,14,13
+    CONTROL         "LB",IDC_LOCKED19,"Button",BS_OWNERDRAW,345,64,14,13
+    CONTROL         "LB",IDC_LOCKED20,"Button",BS_OWNERDRAW,345,80,14,13
+    CONTROL         "LB",IDC_LOCKED21,"Button",BS_OWNERDRAW,300,117,14,13
+    CONTROL         "LB",IDC_LOCKED22,"Button",BS_OWNERDRAW,300,134,14,13
+    CONTROL         "LB",IDC_LOCKED23,"Button",BS_OWNERDRAW,157,186,14,13
+    CONTROL         "LB",IDC_LOCKED24,"Button",BS_OWNERDRAW,157,203,14,14
+    CONTROL         "LB",IDC_LOCKED25,"Button",BS_OWNERDRAW,397,186,14,13
+    CONTROL         "LB",IDC_LOCKED26,"Button",BS_OWNERDRAW,397,203,14,13
+    GROUPBOX        "Cell Quantities",IDC_STATIC,246,7,136,93
+    LTEXT           "",IDC_CELL_COUNT_STATIC,328,19,35,8
+    EDITTEXT        IDC_CELL_W,213,117,30,13,ES_AUTOHSCROLL
+END
+
+IDD_COLOR_ORIENTATION DIALOGEX 0, 0, 292, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify Color Orientation Dialog Box"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,50,14
+    PUSHBUTTON      "Help...",IDC_ORIENT_HLP,235,41,50,14
+    GROUPBOX        "Direction of color increase",IDC_STATIC,7,80,278,83
+    LTEXT           "Left to right:",IDC_STATIC,29,97,38,8
+    LTEXT           "Top to bottom:",IDC_STATIC,29,113,47,8
+    LTEXT           "First to last:",IDC_STATIC,31,129,36,8
+    LTEXT           "",IDC_L2R_STATIC,89,97,46,8
+    COMBOBOX        IDC_DIR_L2R,178,95,85,35,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_T2B_STATIC,89,113,46,8
+    LTEXT           "",IDC_F2L_STATIC,89,129,46,8
+    COMBOBOX        IDC_DIR_T2B,178,111,85,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DIR_F2L,178,127,85,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DIR_F2B,178,143,85,43,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Front to back:",IDC_STATIC,31,145,47,11
+    LTEXT           "",IDC_F2B_STATIC,89,145,46,8
+    LTEXT           "starting with",IDC_STATIC,137,97,38,8
+    LTEXT           "starting with",IDC_STATIC,137,113,38,8
+    LTEXT           "starting with",IDC_STATIC,137,129,38,8
+    LTEXT           "starting with",IDC_STATIC,137,145,38,8
+    LTEXT           "",IDC_ORIENT,84,7,90,66,SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "To change the color orientation, drag and drop any arrow onto an arrow of a different color.  The spin buttons act upon the intersecting arrows only.",IDC_STATIC,7,7,67,70
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | UDS_ARROWKEYS,174,7,20,65,WS_EX_NOPARENTNOTIFY
+END
+
+IDD_VIEW_PAGE DIALOG  10, 20, 69, 18
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Flipper"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "page:",IDC_STATIC,11,5,19,8
+    EDITTEXT        IDC_CUR_PAGE_EDIT,31,3,22,12,ES_AUTOHSCROLL
+END
+
+IDD_CBLOCK_LAYOUT DIALOG  0, 0, 243, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Conglomerate Block Layout Parameters Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CBLOCK_ROWS_EDIT,199,7,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CBLOCK_COLS_EDIT,199,19,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CB_COLSP_EDIT,185,34,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CB_ROWSP_EDIT,185,47,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_V_FRM_W_EDIT,69,7,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_V_FRM_H_EDIT,69,20,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CB_W_EDIT,69,34,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CB_H_EDIT,69,47,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Reset",IDC_CBL_RESET_BN,104,63,33,14
+    DEFPUSHBUTTON   "OK",IDOK,20,188,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,188,50,14
+    PUSHBUTTON      "Help...",IDC_HELP_BN,149,188,50,14
+    LTEXT           "frame width:",IDC_STATIC,29,8,39,8
+    LTEXT           "frame height:",IDC_STATIC,25,22,42,8
+    LTEXT           "C-block width:",IDC_STATIC,21,36,46,8
+    LTEXT           "C-block height:",IDC_STATIC,18,49,50,8
+    LTEXT           "C-block rows per page:",IDC_STATIC,124,8,75,8
+    LTEXT           "C-block columns per page:",IDC_STATIC,112,22,87,8
+    LTEXT           "C-block column spacing:",IDC_STATIC,106,36,78,8
+    LTEXT           "C-block row spacing:",IDC_STATIC,116,49,67,8
+    LTEXT           "",IDC_CBLOCK_STATIC,17,79,206,102
+END
+
+IDD_BLOCK_LAYOUT DIALOG  0, 0, 214, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Block Layout Parameters Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_BCOLS_EDIT,175,9,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BROWS_EDIT,175,23,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_COLSPACE_EDIT,175,36,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_ROWSPACE_EDIT,175,50,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_W_EDIT,51,9,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_H_EDIT,51,23,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCKW_EDIT,51,36,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCKH_EDIT,51,49,31,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Reset",IDC_BL_RESET_BN,91,62,31,14
+    DEFPUSHBUTTON   "OK",IDOK,15,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,189,50,14
+    PUSHBUTTON      "Help...",IDC_HELP_OLD,144,189,50,14
+    LTEXT           "frame width:",IDC_STATIC,10,11,38,8
+    LTEXT           "frame height:",IDC_STATIC,7,24,42,8
+    LTEXT           "block width:",IDC_STATIC,10,37,39,8
+    LTEXT           "block height:",IDC_STATIC,7,51,44,8
+    LTEXT           "block columns per page:",IDC_STATIC,94,12,79,8
+    LTEXT           "block rows per page:",IDC_STATIC,105,25,68,8
+    LTEXT           "column spacing:",IDC_STATIC,121,38,52,8
+    LTEXT           "row spacing:",IDC_STATIC,132,52,40,8
+    LTEXT           "",IDC_BLK_LAYOUT_STATIC,9,80,195,100
+END
+
+IDD_MESSAGE_BOX DIALOG  0, 0, 248, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advisory:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,170,119,55,17
+    PUSHBUTTON      "No",IDC_NO_BN,98,119,56,17
+    PUSHBUTTON      "Yes",IDC_YES_BN,22,119,60,17
+    LTEXT           "",IDC_MESS_STATIC,23,3,205,112
+END
+
+IDD_RETRACT_REQ DIALOG  0, 0, 310, 149
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Retract Change-Request Dialog Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,128,50,14
+    LTEXT           "Request Item:",IDC_STATIC,16,7,37,18
+    LTEXT           "Requested Values:",IDC_STATIC,109,7,39,17
+    LTEXT           "Resulting Values:",IDC_STATIC,167,7,32,20
+    LTEXT           "RETRY or REMOVE:",IDC_STATIC,232,7,39,19
+    LTEXT           "",IDC_F1_STATIC,7,27,87,94
+    LTEXT           "",IDC_F5_STATIC,222,27,81,94
+    LTEXT           "",IDC_F2_STATIC,101,27,53,94
+    LTEXT           "",IDC_F4_STATIC,161,27,54,94
+    LTEXT           "",IDC_ITEM2,15,46,70,11
+    LTEXT           "",IDC_REQ_VAL2,109,47,41,10
+    LTEXT           "",IDC_VAL2,167,47,41,10
+    LTEXT           "",IDC_ITEM3,15,61,70,11
+    LTEXT           "",IDC_REQ_VAL3,109,62,41,10
+    LTEXT           "",IDC_VAL3,167,62,41,10
+    LTEXT           "",IDC_ITEM4,15,76,68,11
+    LTEXT           "",IDC_REQ_VAL4,109,77,41,10
+    LTEXT           "",IDC_VAL4,167,77,41,10
+    LTEXT           "",IDC_ITEM5,15,91,69,11
+    LTEXT           "",IDC_REQ_VAL5,109,92,41,10
+    LTEXT           "",IDC_VAL5,167,92,41,10
+    LTEXT           "",IDC_ITEM6,15,106,72,10
+    LTEXT           "",IDC_REQ_VAL6,109,107,41,10
+    LTEXT           "",IDC_VAL6,167,107,41,10
+    LTEXT           "",IDC_ITEM,15,31,68,11
+    LTEXT           "",IDC_REQ_VAL,109,32,41,10
+    LTEXT           "",IDC_VAL,167,32,41,10
+    LTEXT           "",IDC_DEL2,248,47,51,10
+    LTEXT           "",IDC_DEL3,246,62,50,10
+    LTEXT           "",IDC_DEL4,246,77,51,10
+    LTEXT           "",IDC_DEL5,246,92,50,10
+    LTEXT           "",IDC_DEL6,246,107,50,10
+    LTEXT           "",IDC_DEL1,246,32,50,10
+    CONTROL         "",IDC_RETRACT_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,33,8,8
+    CONTROL         "",IDC_RETRACT_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,48,8,8
+    CONTROL         "",IDC_RETRACT_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,63,8,8
+    CONTROL         "",IDC_RETRACT_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,78,8,8
+    CONTROL         "",IDC_RETRACT_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,94,8,8
+    CONTROL         "",IDC_RETRACT_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,108,8,8
+END
+
+IDD_AUTHORIZE DIALOG  0, 0, 186, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Trial Version Reminder Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,146,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,146,50,14
+    LTEXT           "This software is yours on a ""trial"" basis.  The number of printed outputs and files configurations is limited.  Please enter an authorization code if you wish to fully enable its features.",IDC_STATIC,7,7,172,37
+    LTEXT           "If you would like to obtain an authorization key, please see documentation or contact:",IDC_STATIC,7,43,172,19
+    LTEXT           "ENTER AUTHORIZATION CODE:",IDC_STATIC,7,102,111,8
+    EDITTEXT        IDC_KEY_EDIT,13,116,157,15,ES_AUTOHSCROLL
+    LTEXT           "Highway 65 Software, Inc.",IDC_STATIC,47,71,84,8
+    LTEXT           "email: bpliam@aol.com",IDC_STATIC,47,81,73,8
+END
+
+IDD_EULA DIALOG  0, 0, 280, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "End User Liscence Agreement - (EULA)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "I Agree",IDOK,82,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,209,50,14
+    EDITTEXT        IDC_EULA_EDIT,7,7,266,192,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_FLASH_SCREEN DIALOG  0, 0, 212, 164
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_MY_STATUS_BAR DIALOG  0, 0, 293, 15
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "One moment...",IDC_STATIC,5,3,47,8
+    CONTROL         "",IDC_PROGRESS_STATIC,"Static",SS_BLACKFRAME,56,4,232,7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Highway 65 Software, Inc."
+            VALUE "FileDescription", "ProtoColor"
+            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "InternalName", "ProtoColor"
+            VALUE "LegalCopyright", "Copyright © 2004"
+            VALUE "OriginalFilename", "ProtoColor.exe"
+            VALUE "ProductName", "Highway 65 Software, Inc. ProtoColor"
+            VALUE "ProductVersion", "1, 1, 0, 1"
+        END
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "PROTOCOLOR MFC Application"
+            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "InternalName", "PROTOCOLOR"
+            VALUE "LegalCopyright", "Copyright © 2004"
+            VALUE "OriginalFilename", "PROTOCOLOR.EXE"
+            VALUE "ProductName", "PROTOCOLOR Application"
+            VALUE "ProductVersion", "1, 1, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200, 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COLOR_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_PAGE_LAYOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_COLOR_ORIENTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_VIEW_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_CBLOCK_LAYOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_BLOCK_LAYOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_MESSAGE_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_RETRACT_REQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_AUTHORIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+
+    IDD_EULA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_FLASH_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_MY_STATUS_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ProtoColor"
+    IDR_PROCOTYPE           "\nProCo\nProCo\nProtoC Files (*.ccf)\n.CCF\nProtoColor.Document\nProCo Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ProtoColor"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\ProtoColor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
