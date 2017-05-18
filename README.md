@@ -2,7 +2,7 @@
 
 ## Aim
 
-This is currently a Microsoft MFC (TM) desktop application that allows users to send a range of colored squares to the screen in order to see how colors print or display on different devices. It provides a way of manually calibrating your divices or anticipating the color input that is needed for desired output.
+This is currently a Microsoft MFC (TM) desktop application that allows users to send a range of colored squares to the screen in order to see how colors print or display on different devices. It provides a way of manually calibrating your devices or anticipating the color input that is needed for desired output.
 
 ## Prerequisites to run
 
